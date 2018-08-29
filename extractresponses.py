@@ -128,3 +128,5 @@ u_make_hash = udf(make_hash)
 df2 = joinedresponses.select(joinedresponses['*'], (u_make_hash(joinedresponses['fn'])).alias('fnhash'))
 
 df2.write().mode("append").saveAsTable("temp_responses")
+
+print("test")
